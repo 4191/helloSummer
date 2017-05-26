@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TESTPAGE</title>
+<style>
+		
+</style>
+<script src="C:\Users\Administrator.PC-20170108FBZM\Desktop\MyStudy\javascript\javascript\jquery\jquery-1.11.3.js"></script>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+// function mx(a){
+// 	var fn = function(b){
+// 		var c = a+b;
+// 		console.log(c)
+// 		return mx(c)
+// 	}
+// 	return fn;
+// }
+// mx(2)(3)(4);
+
+
+function add(n) {
+  var fn = function(m) {
+    return add(n + m);
+  };
+
+  fn.valueOf = function() {
+    return n;
+  };
+
+  // fn.toString = function() {
+  //   return '' + n;
+  // };
+
+  return fn;
+}
+console.log(add(2)(3)(4))
+
+</script>
